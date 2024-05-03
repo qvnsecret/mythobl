@@ -6,10 +6,6 @@ app.get('/', (req, res) => {
     res.send('Hello Express app!')
 });
 
-app.use('/ping', (req, res) => {
-    res.send(new Date());
-});
-
 app.listen(3000, () => {
     console.log(chalk.greenBright.bold('The server is now running and listening on port 3000.'));
 });
